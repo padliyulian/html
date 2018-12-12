@@ -1,0 +1,42 @@
+/* #---------------------------------------------------#
+css utama
+#---------------------------------------------------# */
+
+/* set semua elemen ke border-box */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.tooltip {
+  margin: 50px 0 0 20px;
+  position: relative;
+}
+
+.tooltiptext {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: grey;
+  color: white;
+
+  opacity: 0;
+  position: absolute;
+  top: -45px;
+  left: 80px;
+  z-index: 1;
+  transition: 1s;
+}
+
+.tooltip .tooltiptext::before {
+  position: absolute;
+  content: "";
+  left: 10px;
+  top: 36px;
+  border-top: 10px solid grey;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}

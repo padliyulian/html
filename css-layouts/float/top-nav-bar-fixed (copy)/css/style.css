@@ -1,0 +1,102 @@
+/* #---------------------------------------------------#
+css utama
+#---------------------------------------------------# */
+/* set semua elemen ke border-box */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* --------------------------------------------------- */
+
+nav {
+  background-color: rgb(99, 93, 130);
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+nav li, nav a {
+  display: inline-block;
+}
+
+nav a {
+  background-color: rgb(99, 93, 130);
+  padding: 16px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin-left: -5px;
+  border-top: 5px solid rgb(99, 93, 130);
+}
+
+nav a:hover {
+  border-top: 5px solid salmon;
+}
+
+@media screen and (max-width: 600px) {
+  nav li, nav a {
+    display: block;
+  }
+}
+
+.row1 {
+  margin-top: 50px;
+  background-color: grey;
+}
+
+.col {
+  float: left;
+  height: 300px;
+}
+
+.col-75 {
+  width: 75%;
+  background-color: lightgrey;
+}
+
+.col-25 {
+  width: 25%;
+  background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .col {
+    width: 100%;
+    padding: 5px;
+  }
+
+}
+
+.row2 {
+  background-color: salmon;
+}
+
+.col2 {
+  float: left;
+  height: 500px;
+}
+
+.col2-50 {
+  width: 50%;
+  background-color: rgb(80, 213, 223);
+}
+
+.col2-25 {
+  width: 25%;
+  background-color: rgb(100, 128, 87);
+}
+
+@media screen and (max-width: 800px) {
+  .col2 {
+    width: 100%;
+    padding: 5px;
+  }
+
+}
+
+footer {
+  background-color: grey;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}

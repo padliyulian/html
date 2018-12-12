@@ -1,0 +1,165 @@
+/* css utama */
+
+/* set semua selector ke border box */
+* {
+  /* tambah webkit agar support di chrome opera safari */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/christmas-dark.png);
+  position: relative;
+  font-family: AguafinaScript, arial, cursive;
+}
+
+@font-face {
+  font-family: 'AguafinaScript';
+  src: url(../fonts/AguafinaScript-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'kingthings';
+  src: url(../fonts/kingthings.woff) format('woff');
+}
+
+.top-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 38px;
+  background-color: rgba(52, 52, 52, 0.50);
+  border-bottom: 2px dashed salmon;
+  z-index: 555;
+}
+
+.twRibon {
+  background-image: url(../img/tw.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: -26px;
+  top: -22px;
+}
+
+.container {
+  background-image: url(../img/bg.png);
+  width: 1000px;
+  background-color: white;
+  margin: 80px auto;
+  position: relative;
+  border-radius: 20px;
+  border: 5px solid grey;
+  /* overflow: hidden; */
+  -webkit-box-shadow: 5px 5px 10px, -5px -5px 10px;
+  box-shadow: 5px 5px 10px, -5px -5px 10px;
+}
+
+.header h1 {
+  font-size: 80px;
+  padding: 40px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  font-weight: bold;
+}
+
+.nav-bar {
+  background-color: rgba(35, 34, 37, 0.94);
+  padding-left: 30px;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  margin-left: -3px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav-bar ul li a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-family: kingthings;
+  color: white;
+  font-size: 25px;
+}
+
+.nav-bar ul li a:hover {
+  background-color: grey;
+  color: white;
+  border-top: 4px solid salmon;
+}
+
+.hero {
+  background-color: grey;
+  height: 400px;
+  background-image: url(../img/head.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 0 -220px;
+  border-top: 2px dashed salmon;
+  border-bottom: 2px dashed salmon;
+}
+
+.section1 {
+  border-right: 2px dashed salmon;
+  width: 675px;
+  padding: 30px;
+  font-size: 30px;
+  line-height: 35px;
+  float: left;
+}
+
+.section1 h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.section1 p {
+  margin-top: 20px;
+}
+
+.footer {
+  border-top: 2px dashed salmon;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(35, 34, 37, 0.94);
+  color: white;
+  font-size: 30px;
+  font-family: kingthings;
+}
+
+.footer span {
+  font-size: 40px;
+}
+
+ .section2 {
+   width: 300px;
+   float: right;
+   padding: 30px 10px 10px 10px;
+
+ }
+
+ .section2 h3 {
+   font-size: 35px;
+   text-shadow: 1px 1px 3px black;
+   margin-bottom: 20px;
+ }
+
+ .section2 p {
+   font-size: 25px;
+ }
+
+ .section2 img {
+   float: left;
+   margin: 10px 15px 10px 0;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   border: 4px solid white;
+   -webkit-box-shadow: 1px 1px 5px black;
+   box-shadow: 1px 1px 5px black;
+ }

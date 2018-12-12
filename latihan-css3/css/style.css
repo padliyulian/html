@@ -1,0 +1,265 @@
+/* css utama */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/bg.png);
+  position: relative;
+}
+
+.kotak, .kotak1, .kotak3 {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.container .kotak {
+  background-color: salmon;
+  line-height: 200px;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  margin: 20px;
+  background-image: url(../img/julian.jpg);
+  background-size: cover;
+  border: 5px solid white;
+  box-shadow: 1px 1px 5px black;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.k1:hover .kotak {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.container .kotak1 {
+  background-color: rgba(255, 102, 0, 0.5);
+  margin: 20px;
+  position: relative;
+}
+
+.container .kotak1 .kotak2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  opacity: 0.5;
+}
+
+.container .kotak3 {
+  background-color: salmon;
+  margin: 80px 0 50px 20px;
+  box-shadow: 2px 2px 10px green, -2px -2px 10px blue;
+}
+
+.kotak4 {
+  margin: 20px;
+  position: relative;
+}
+
+.kotak4 span {
+  position: absolute;
+  top: 0;
+  left: 260px;
+}
+
+.kotak4 h2 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Times New Roman', 'Arial Narrow', serif;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.grp {
+  text-align: center;
+  line-height: 300px;
+}
+
+.kotak5 {
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(to bottom right, red, salmon, yellow);
+  margin: 20px 0 20px 20px;
+  float: left;
+
+}
+
+.kotak6 {
+  width: 100px;
+  height: 300px;
+  background-image: linear-gradient(to bottom, green, blue);
+  margin: 20px 0 20px 20px;
+  float: left;
+}
+
+.kotak7 {
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin: 20px 0 20px 20px;
+  background-image: radial-gradient(circle closest-side, red, green);
+}
+
+.kotak8 {
+  margin: 20px;
+  font-size: 25px;
+  line-height: 35px;
+  font-family: delius, arial, sans-serif;
+  text-transform: capitalize;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+@font-face {
+  font-family: 'delius';
+  src: url(../fonts/delius-regular-webfont.woff) format('woff');
+}
+
+.kotak9 {
+  position: relative;
+}
+
+.kotak9 span {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.kotak9 img {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 0% 50%;
+  border: 5px solid white;
+  -webkit-box-shadow: 1px 1px 5px black;
+   box-shadow: 1px 1px 5px black;
+   -webkit-filter: grayscale(100%) blur(2px);
+   filter: grayscale(100%) blur(2px);
+   -webkit-transition: 0.3s;
+   -o-transition: 0.3s;
+   transition: 0.3s;
+}
+
+.kotak9:hover img {
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+}
+
+.kotak10, .kotak11 {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: salmon;
+  transition: 1s;
+}
+
+.kotak11, .kotak12 {
+  text-align: center;
+  line-height: 100px;
+}
+
+.bungkus:hover .kotak10 {
+  transform: translateX(500px) rotate(360deg) scale(2);
+  background-color: blue;
+}
+
+.bungkus1:hover .kotak11 {
+  width: 500px;
+}
+
+.bungkus2 .kotak12 {
+  position: absolute;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  animation: key1 5s;
+}
+
+.kotak13 {
+  margin: 500px 0 20px 20px;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  animation: key2 3s;
+}
+
+@keyframes key1 {
+  10% {
+    margin-left: 500px;
+    margin-top: 20px;
+    background-color: red;
+  }
+  20% {
+    margin-left: 1000px;
+    margin-top: 20px;
+    background-color: green;
+  }
+  30% {
+    margin-left: 1000px;
+    margin-top: 400px;
+    background-color: blue;
+  }
+  40% {
+    margin-left: 600px;
+    margin-top: 400px;
+    background-color: black;
+  }
+  50% {
+    margin-left: 600px;
+    margin-top: 200px;
+    background-color: salmon;
+  }
+  60% {
+    margin-left: 20px;
+    margin-top: 200px;
+    background-color: yellow;
+    transform: rotate(720deg);
+  }
+  70% {
+    margin-left: 20px;
+    margin-top: 400px;
+    background-color: lime;
+  }
+  80% {
+    margin-left: 400px;
+    margin-top: 400px;
+    background-color: salmon;
+  }
+  90% {
+    margin-left: 20px;
+    margin-top: 400px;
+    background-color: salmon;
+  }
+}
+
+@keyframes key2 {
+  0% {
+    margin: 500px 0 20px 20px;
+  }
+  15% {
+    margin: 500px 0 20px 400px;
+  }
+  30% {
+    margin: 500px 0 20px 20px;
+  }
+  45% {
+    margin: 500px 0 20px 300px;
+  }
+  60% {
+    margin: 500px 0 20px 20px;
+  }
+  75% {
+    margin: 500px 0 20px 200px;
+  }
+  90% {
+    margin: 500px 0 20px 20px;
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gallery</title>
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <h1>Bangka Island</h1>
+
+  <!-- kontainer/pembungkus utama -->
+  <div class="container">
+
+    <!-- ul dengan kelas cf untuk manggil clearfix float css -->
+    <ul class="cf gallery">
+
+      <li>
+        <!-- gambar kecil di bungkus dengan link -->
+        <a href="#gambar1">
+          <img src="./img/thumbs/1.jpg" alt="gambar 1" class="tmb">
+          <span>Danau Biru1</span>
+        </a>
+
+        <!-- gambar besar hidden yg akan muncul apabila gambar kecil di klik -->
+        <div class="overlay" id="gambar1">
+          <!-- tombol sebelum -->
+          <a href="#gambar6" class="prev"></a>
+          <!-- gambar full dengan link ke halaman utama -->
+          <a href="#" class="close">
+            <img src="./img/full/1.jpg" alt="gambar 1" class="balik">
+          </a>
+          <!-- tombol sesudah -->
+          <a href="#gambar2" class="next"></a>
+        </div>
+      </li>
+
+      <li>
+        <a href="#gambar2">
+          <img src="./img/thumbs/2.jpg" alt="gambar 2" class="tmb">
+          <span>Danau Biru2</span>
+        </a>
+        <div class="overlay" id="gambar2">
+          <a href="#gambar1" class="prev"></a>
+          <a href="#" class="close">
+            <img src="./img/full/2.jpg" alt="gambar 2" class="balik">
+          </a>
+          <a href="#gambar3" class="next"></a>
+        </div>
+      </li>
+
+      <li>
+        <a href="#gambar3">
+          <img src="./img/thumbs/3.jpg" alt="gambar 3" class="tmb">
+          <span>Kuil1</span>
+        </a>
+        <div class="overlay" id="gambar3">
+          <a href="#gambar2" class="prev"></a>
+          <a href="#" class="close">
+            <img src="./img/full/3.jpg" alt="gambar 3" class="balik">
+          </a>
+          <a href="#gambar4" class="next"></a>
+        </div>
+      </li>
+
+      <li>
+        <a href="#gambar4">
+          <img src="./img/thumbs/4.jpg" alt="gambar 4" class="tmb">
+          <span>kuil2</span>
+        </a>
+        <div class="overlay" id="gambar4">
+          <a href="#gambar3" class="prev"></a>
+          <a href="#" class="close">
+            <img src="./img/full/4.jpg" alt="gambar 4" class="balik">
+          </a>
+          <a href="#gambar5" class="next"></a>
+        </div>
+      </li>
+
+      <li>
+        <a href="#gambar5">
+          <img src="./img/thumbs/5.jpg" alt="gambar 5" class="tmb">
+          <span>Pantai1</span>
+        </a>
+        <div class="overlay" id="gambar5">
+          <a href="#gambar4" class="prev"></a>
+          <a href="#" class="close">
+            <img src="./img/full/5.jpg" alt="gambar 5" class="balik">
+          </a>
+          <a href="#gambar6" class="next"></a>
+        </div>
+      </li>
+
+      <li>
+        <a href="#gambar6">
+          <img src="./img/thumbs/6.jpg" alt="gambar 6" class="tmb">
+          <span>Pantai2</span>
+        </a>
+        <div class="overlay" id="gambar6">
+          <a href="#gambar5" class="prev"></a>
+          <a href="#" class="close">
+            <img src="./img/full/6.jpg" alt="gambar 6" class="balik">
+          </a>
+          <a href="#gambar1" class="next"></a>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+
+
+</body>
+</html>
